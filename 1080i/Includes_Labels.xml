@@ -55,10 +55,17 @@
         <value condition="Container.Content(albums)">$INFO[ListItem.Album]</value>
         <value condition="Container.Content(tvshows) | Container.Content(seasons)">$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20360]]$INFO[ListItem.Property(UnWatchedEpisodes),  •  , $LOCALIZE[16101]]$INFO[ListItem.Studio,  •  ]</value>
         <value condition="Container.Content(episodes)">$INFO[ListItem.Season,$LOCALIZE[20373] ,]$INFO[ListItem.Episode,  •  $LOCALIZE[20359] ,]$INFO[ListItem.Premiered,  •  ,]$INFO[ListItem.Duration,  •  , $LOCALIZE[31102]]</value>
-        <value condition="!IsEmpty(ListItem.Genre)">$INFO[ListItem.Genre]</value>
+        <value condition="!IsEmpty(ListItem.Genre)">$INFO[ListItem.Director]</value>
         <value condition="!IsEmpty(Window(home).Property(SkinHelper.ListItem.Genre))">$INFO[Window(home).Property(SkinHelper.ListItem.Genre)]</value>
         <value condition="!IsEmpty(Window(home).Property(Set.Movies.Genre))">$INFO[Window(home).Property(Set.Movies.Genre)]</value>
         <value condition="!IsEmpty(ListItem.Property(Artist_Genre))">$INFO[ListItem.Property(Artist_Genre)]</value>
+        <value>$LOCALIZE[19055]</value>
+    </variable>
+    <variable name="LabelAlwaysGenre">
+        <value condition="Container.Content(albums)">$INFO[ListItem.Album]</value>
+        <value condition="Container.Content(tvshows) | Container.Content(seasons)">$INFO[ListItem.Genre]</value>
+        <value condition="Container.Content(episodes)">$INFO[ListItem.Genre]</value>
+        <value condition="!IsEmpty(ListItem.Genre)">$INFO[ListItem.Genre]</value>
         <value>$LOCALIZE[19055]</value>
     </variable>
     <variable name="LabelDuration">

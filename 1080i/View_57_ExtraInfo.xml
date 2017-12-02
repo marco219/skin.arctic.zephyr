@@ -194,8 +194,19 @@
                     <selectedcolor>Dark1</selectedcolor>
                     <label>$VAR[LabelGenre]</label>
                 </control>
+
+                <control type="label">
+                    <top>88</top>
+                    <height>64</height>
+                    <aligny>center</aligny>
+                    <font>Tiny</font>
+                    <textcolor>Dark1</textcolor>
+                    <selectedcolor>Dark1</selectedcolor>
+                    <label>$VAR[LabelAlwaysGenre]</label>
+                </control>
+
                 <control type="textbox">
-                    <top>116</top>
+                    <top>146</top>
                     <bottom>17</bottom>
                     <align>justify</align>
                     <font>Tiny</font>
