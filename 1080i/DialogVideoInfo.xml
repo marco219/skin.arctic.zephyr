@@ -428,16 +428,6 @@
                                 <label>[B]$LOCALIZE[445][/B]</label>
                                 <aligny>center</aligny>
                             </control>
-                            <control type="label">
-                                <left>150</left>
-                                <right>420</right>
-                                <height>36</height>
-                                <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
-                                <label fallback="19055">19055</label>
-                                <aligny>center</aligny>
-                                <visible>IsEmpty(ListItem.AudioLanguage) + IsEmpty(ListItem.SubtitlesLanguage)</visible>
-                            </control>
                             <control type="grouplist">
                                 <orientation>horizontal</orientation>
                                 <left>150</left>
@@ -447,8 +437,8 @@
                                 <control type="image">
                                     <width>28</width>
                                     <height>28</height>
-                                    <texture>$INFO[ListItem.AudioLanguage,flags/lang/,.png]</texture>
-                                    <visible>!IsEmpty(ListItem.AudioLanguage)</visible>
+                                    <texture>$INFO[ListItem.Property(AudioLanguage.1),flags/lang/,.png]</texture>
+                                    <visible>!IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
                                 </control>
                                 <control type="image">
                                     <width>28</width>
@@ -477,48 +467,136 @@
                                 <control type="image">
                                     <width>28</width>
                                     <height>28</height>
-                                    <texture>$INFO[ListItem.SubtitlesLanguage,flags/lang/,.png]</texture>
-                                    <visible>!IsEmpty(ListItem.SubtitlesLanguage)</visible>
-                                    <colordiffuse>ff777777</colordiffuse>
+                                    <texture>$INFO[ListItem.Property(AudioLanguage.6),flags/lang/,.png]</texture>
+                                    <visible>!IsEmpty(ListItem.Property(AudioLanguage.6))</visible>
+                                </control>
+                                <control type="image">
+                                    <width>28</width>
+                                    <height>28</height>
+                                    <texture>$INFO[ListItem.Property(AudioLanguage.7),flags/lang/,.png]</texture>
+                                    <visible>!IsEmpty(ListItem.Property(AudioLanguage.7))</visible>
+                                </control>
+                                <control type="image">
+                                    <width>28</width>
+                                    <height>28</height>
+                                    <texture>$INFO[ListItem.Property(AudioLanguage.8),flags/lang/,.png]</texture>
+                                    <visible>!IsEmpty(ListItem.Property(AudioLanguage.8))</visible>
+                                </control>
+                                <control type="image">
+                                    <width>28</width>
+                                    <height>28</height>
+                                    <texture>$INFO[ListItem.Property(AudioLanguage.9),flags/lang/,.png]</texture>
+                                    <visible>!IsEmpty(ListItem.Property(AudioLanguage.9))</visible>
+                                </control>
+                                <control type="image">
+                                    <width>28</width>
+                                    <height>28</height>
+                                    <texture>$INFO[ListItem.Property(AudioLanguage.10),flags/lang/,.png]</texture>
+                                    <visible>!IsEmpty(ListItem.Property(AudioLanguage.10))</visible>
+                                </control>
+                                <control type="image">
+                                    <width>28</width>
+                                    <height>28</height>
+                                    <texture>$INFO[ListItem.Property(AudioLanguage.11),flags/lang/,.png]</texture>
+                                    <visible>!IsEmpty(ListItem.Property(AudioLanguage.11))</visible>
+                                </control>
+                                <control type="image">
+                                    <width>28</width>
+                                    <height>28</height>
+                                    <texture>$INFO[ListItem.Property(AudioLanguage.12),flags/lang/,.png]</texture>
+                                    <visible>!IsEmpty(ListItem.Property(AudioLanguage.12))</visible>
+                                </control>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <height>36</height>
+                            <control type="label">
+                                <width>100%</width>
+                                <height>36</height>
+                                <font>Tiny</font>
+                                <textcolor>Dark1</textcolor>
+                                <label>[B]$LOCALIZE[287][/B]</label>
+                                <aligny>center</aligny>
+                            </control>
+                            <control type="grouplist">
+                                <orientation>horizontal</orientation>
+                                <left>150</left>
+                                <right>420</right>
+                                <top>2</top>
+                                <height>28</height>
+                                <control type="image">
+                                    <width>28</width>
+                                    <height>28</height>
+                                    <texture>$INFO[ListItem.Property(SubtitleLanguage.1),flags/lang/,.png]</texture>
+                                    <visible>!IsEmpty(ListItem.Property(SubtitleLanguage.1))</visible>
                                 </control>
                                 <control type="image">
                                     <width>28</width>
                                     <height>28</height>
                                     <texture>$INFO[ListItem.Property(SubtitleLanguage.2),flags/lang/,.png]</texture>
                                     <visible>!IsEmpty(ListItem.Property(SubtitleLanguage.2))</visible>
-                                    <colordiffuse>ff777777</colordiffuse>
                                 </control>
                                 <control type="image">
                                     <width>28</width>
                                     <height>28</height>
                                     <texture>$INFO[ListItem.Property(SubtitleLanguage.3),flags/lang/,.png]</texture>
                                     <visible>!IsEmpty(ListItem.Property(SubtitleLanguage.3))</visible>
-                                    <colordiffuse>ff777777</colordiffuse>
                                 </control>
                                 <control type="image">
                                     <width>28</width>
                                     <height>28</height>
                                     <texture>$INFO[ListItem.Property(SubtitleLanguage.4),flags/lang/,.png]</texture>
                                     <visible>!IsEmpty(ListItem.Property(SubtitleLanguage.4))</visible>
-                                    <colordiffuse>ff777777</colordiffuse>
                                 </control>
                                 <control type="image">
                                     <width>28</width>
                                     <height>28</height>
                                     <texture>$INFO[ListItem.Property(SubtitleLanguage.5),flags/lang/,.png]</texture>
                                     <visible>!IsEmpty(ListItem.Property(SubtitleLanguage.5))</visible>
-                                    <colordiffuse>ff777777</colordiffuse>
+                                </control>
+                                <control type="image">
+                                    <width>28</width>
+                                    <height>28</height>
+                                    <texture>$INFO[ListItem.Property(SubtitleLanguage.6),flags/lang/,.png]</texture>
+                                    <visible>!IsEmpty(ListItem.Property(SubtitleLanguage.6))</visible>
+                                </control>
+                                <control type="image">
+                                    <width>28</width>
+                                    <height>28</height>
+                                    <texture>$INFO[ListItem.Property(SubtitleLanguage.7),flags/lang/,.png]</texture>
+                                    <visible>!IsEmpty(ListItem.Property(SubtitleLanguage.7))</visible>
+                                </control>
+                                <control type="image">
+                                    <width>28</width>
+                                    <height>28</height>
+                                    <texture>$INFO[ListItem.Property(SubtitleLanguage.8),flags/lang/,.png]</texture>
+                                    <visible>!IsEmpty(ListItem.Property(SubtitleLanguage.8))</visible>
+                                </control>
+                                <control type="image">
+                                    <width>28</width>
+                                    <height>28</height>
+                                    <texture>$INFO[ListItem.Property(SubtitleLanguage.9),flags/lang/,.png]</texture>
+                                    <visible>!IsEmpty(ListItem.Property(SubtitleLanguage.9))</visible>
+                                </control>
+                                <control type="image">
+                                    <width>28</width>
+                                    <height>28</height>
+                                    <texture>$INFO[ListItem.Property(SubtitleLanguage.10),flags/lang/,.png]</texture>
+                                    <visible>!IsEmpty(ListItem.Property(SubtitleLanguage.10))</visible>
+                                </control>
+                                <control type="image">
+                                    <width>28</width>
+                                    <height>28</height>
+                                    <texture>$INFO[ListItem.Property(SubtitleLanguage.11),flags/lang/,.png]</texture>
+                                    <visible>!IsEmpty(ListItem.Property(SubtitleLanguage.11))</visible>
+                                </control>
+                               <control type="image">
+                                    <width>28</width>
+                                    <height>28</height>
+                                    <texture>$INFO[ListItem.Property(SubtitleLanguage.12),flags/lang/,.png]</texture>
+                                    <visible>!IsEmpty(ListItem.Property(SubtitleLanguage.12))</visible>
                                 </control>
                             </control>
-                            <!-- <control type="label">
-                                <left>150</left>
-                                <width>100%</width>
-                                <height>36</height>
-                                <font>Tiny</font>
-                                <textcolor>Dark2</textcolor>
-                                <label fallback="19055">$INFO[Window(movieinformation).Property(AudioLanguage.1),[UPPERCASE],[/UPPERCASE]]$INFO[Window(movieinformation).Property(AudioLanguage.2), [UPPERCASE],[/UPPERCASE]]$INFO[Window(movieinformation).Property(AudioLanguage.3), [UPPERCASE],[/UPPERCASE]]$INFO[Window(movieinformation).Property(AudioLanguage.4), [UPPERCASE],[/UPPERCASE]]$INFO[Window(movieinformation).Property(AudioLanguage.5), [UPPERCASE],[/UPPERCASE]]</label>
-                                <aligny>center</aligny>
-                            </control> -->
                         </control>
                         <control type="label">
                             <width>100%</width>

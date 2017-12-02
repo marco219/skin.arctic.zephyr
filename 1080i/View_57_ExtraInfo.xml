@@ -183,7 +183,7 @@
                     <font>SmallBold</font>
                     <textcolor>Dark1</textcolor>
                     <selectedcolor>Dark1</selectedcolor>
-                    <label>$VAR[LabelDirector]</label>
+                    <label>$VAR[LabelDirector]  •  $INFO[ListItem.Year]</label>
                 </control>
                 <control type="label">
                     <top>48</top>
